@@ -13,14 +13,14 @@ body {
 }
 
 /* ------Mobile Responsive-------------------- */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   div:not(.container) {
     display: inline-block;
   }
   .timeline {
     flex-direction: row;
   }
-}
+} */
 /* ------Positioning-------------------- */
 
 .card {
