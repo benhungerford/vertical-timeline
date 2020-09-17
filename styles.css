@@ -12,7 +12,16 @@ body {
   display: inline-block;
 }
 
-/* ------Positioning -------------------- */
+/* ------Mobile Responsive-------------------- */
+@media (min-width: 768px) {
+  div:not(.container) {
+    display: inline-block;
+  }
+  .timeline {
+    flex-direction: row;
+  }
+}
+/* ------Positioning-------------------- */
 
 .card {
   position: relative;
@@ -30,8 +39,7 @@ body {
   left: 20%;
 }
 
-
-/* ------Column -------------------- */
+/* ------Column-------------------- */
 
 .column {
   border-left: 6px solid #215D89;
@@ -47,9 +55,7 @@ body {
   size: 300px;
 }
 
-
-
-/* ------ALL CARDS-------------------- */
+/* ------CARDS DEFAULT-------------------- */
 header {
   width: 100%
   /* height: 20%; */
@@ -148,7 +154,7 @@ p {
   top: 40px;
 }
 
-/* ------Card 1 -------------------- */
+/* ------Card 1-------------------- */
 
 .date1 {
   margin: 0;
@@ -156,7 +162,7 @@ p {
   left: 100%;
 }
 
-/* ------Card 2 -------------------- */
+/* ------Card 2-------------------- */
 
 .card2 header{
   background-image: url(https://midwestexpressclinic.com/wp-content/uploads/Firework-Safety-Tips.jpg);
@@ -179,7 +185,7 @@ p {
   margin-bottom: 5%;
 }
 
-/* ------Card 3 -------------------- */
+/* ------Card 3-------------------- */
 .card3 {
   padding-bottom: 20px;
 
@@ -201,5 +207,3 @@ p {
   padding-left: 6px;
   margin-bottom: 5px;
 }
-
-/* ------Still need a home -------------------- */
