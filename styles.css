@@ -10,17 +10,10 @@ body {
   display: flex;
   width: 100%;
   display: inline-block;
+  position: relative;
 }
 
-/* ------Mobile Responsive-------------------- */
-/* @media (min-width: 768px) {
-  div:not(.container) {
-    display: inline-block;
-  }
-  .timeline {
-    flex-direction: row;
-  }
-} */
+
 /* ------Positioning-------------------- */
 
 .card {
@@ -28,7 +21,7 @@ body {
 }
 
 .card1 {
-  left: 20%;
+  left: 9.4%;
 }
 
 .card2 {
@@ -36,7 +29,7 @@ body {
 }
 
 .card3 {
-  left: 20%;
+  left: 9.4%;
 }
 
 /* ------Column-------------------- */
@@ -50,9 +43,29 @@ body {
  top: 0;
 }
 
-.column img {
+.column .fas {
+  border-radius: 50%;
+  border: solid 1px #215D89;
+  position: relative;
   color: white;
   size: 300px;
+  background-color: #215D89;
+  padding: 6px;
+}
+
+.pencil1 {
+  right: 18px;
+    top: 95px;
+}
+
+.pencil2 {
+  top: 405px;
+  right: 52px;
+}
+
+.pencil3 {
+  top: 850px;
+  right: 87px;
 }
 
 /* ------CARDS DEFAULT-------------------- */
@@ -61,30 +74,30 @@ header {
   /* height: 20%; */
 }
 h1 {
-  font-size: 20px;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 p {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 16px;
 }
 
 .card {
   border-radius: 3px;
-  width: 25%;
-  height: 100%;
+  width: 35.5%;
   background-color: #F5F5F5;
-  margin: 15px;
+  margin: 50px 15px;
   box-shadow: 0px 5px 8px gray;
 }
 
 .date {
   display: inline-block;
-  font-size: 12px;
+  font-size: 16px;
   color:#F5F5F5;
   text-transform: uppercase;
   background-color: #EC515C;
-  padding: 10px;
+  padding: 14px 10px;
 }
 
 .title {
@@ -93,6 +106,7 @@ p {
 }
 
 .paragraph {
+  line-height: 25px;
   margin-left: 20px;
   margin-right: 30px;
 }
@@ -108,7 +122,7 @@ p {
     background: #276188;
     color: #F5F5F5;
     font-family: sans-serif;
-    font-size: 10px;
+    font-size: 13px;
     line-height: 1;
     cursor: pointer;
     text-align: center;
@@ -139,7 +153,7 @@ p {
   border-left: 10px solid #F5F5F5;
   position: absolute;
   left: 100%;
-  top: 40px;
+  top: 50px;
 }
 
 .arrow-left {
@@ -151,7 +165,7 @@ p {
   border-right:10px solid #F5F5F5;
   position: absolute;
   right: 100%;
-  top: 40px;
+  top: 50px;
 }
 
 /* ------Card 1-------------------- */
@@ -160,6 +174,9 @@ p {
   margin: 0;
   position: sticky;
   left: 100%;
+}
+.card1 .arrow-left {
+  visibility: hidden;
 }
 
 /* ------Card 2-------------------- */
@@ -178,7 +195,8 @@ p {
 
 .title2 {
   color: #F5F5F5;
-  margin-top: 25%;
+  margin-top: 20%;
+  padding-bottom: 4%;
 }
 
 .card2 header {
@@ -206,4 +224,48 @@ p {
   border-color: #276188;
   padding-left: 6px;
   margin-bottom: 5px;
+}
+
+.card3 .arrow-left {
+  visibility: hidden;
+}
+
+
+/* ------Mobile Responsive-------------------- */
+@media (max-width: 768px) {
+
+  .timeline {
+
+  }
+
+  .column {
+      border-left: 6px solid #215D89;
+      height: 100%;
+      position: absolute;
+      left: 5%;
+      /* margin-left: -3px; */
+      top: 0;
+  }
+  .card {
+    border-radius: 3px;
+    width: 80%;
+    background-color: #F5F5F5;
+    margin: 50px 15px;
+    box-shadow: 0px 5px 8px grey;
+  }
+  .card2 {
+      left: 9.5%;
+  }
+  .card1 .arrow-right {
+    visibility: hidden;
+  }
+  .card3 .arrow-right {
+    visibility: hidden;
+  }
+  .card1 .arrow-left {
+    visibility: visible;
+  }
+  .card3 .arrow-left {
+    visibility: visible;
+  }
 }
